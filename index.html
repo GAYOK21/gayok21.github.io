@@ -1,47 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="styles.css">   <script>(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',8471700,document.createElement('script'))</script>
-<script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('teestoagloupaza.net',8471008,document.createElement('script'))</script>
+      <script>(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',8471700,document.createElement('script'))</script>
+  <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('teestoagloupaza.net',8471008,document.createElement('script'))</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAYOK21 - Blog Postingan</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GAYOK21 - MY VIDEOS</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* General Layout */
+        body {
+            background-color: #f0f2f5;
+            position: relative;
+        }
+
+        /* Header */
+        .header {
+            background-color: #4267b2;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Search Bar */
+        .search-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .search-input {
+            display: none;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-button {
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            color: #4267b2;
+            font-weight: bold;
+        }
+
+        .search-button:hover {
+            background-color: #ddd;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 60%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+
+        .main-content article {
+            margin-bottom: 20px;
+        }
+
+        .main-content h2 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4267b2;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #4267b2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>GAYOK21 - Video Postingan</h1>
-        <p>Temukan postingan terbaru dari GAYOK21.</p>
-    </header>
 
-    <main>
-        <section class="post-gallery">
-            <!-- Contoh postingan -->
-            
-            
-            
-            
-            <!-- Tambahkan postingan lainnya di sini -->
-        </section>
-    </main>
-<!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.startgif', '1,4907853,4,10042,"div#histatsC {position: absolute;top:0px;left:0px;}body>div#histatsC {position: fixed;}"']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_gif_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" alt="" target="_blank" ><div id="histatsC"><img border="0" src="//s4is.histats.com/stats/i/4907853.gif?4907853&103"></div></a>
-</noscript>
-<!-- Histats.com  END  -->
+    <!-- Header -->
+    <div class="header">
+        <h1>GAYOK21</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Cari artikel..." oninput="searchArticles()">
+                <button class="search-button" onclick="toggleSearch()">🔍</button>
+            </div>
+        </nav>
+    </div>
 
+    <!-- Container -->
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content" id="articles">
+            
+          
+          
+          
+            <!-- Tambahkan lebih banyak artikel sesuai kebutuhan -->
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 GAYOK21. All rights reserved.</p>
-    </footer>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">Atas</button>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>GAYOK21 | Copyright &copy; 2024</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Menampilkan atau menyembunyikan input pencarian
+        function toggleSearch() {
+            const searchInput = document.getElementById("search-input");
+            if (searchInput.style.display === "none" || searchInput.style.display === "") {
+                searchInput.style.display = "inline-block";
+                searchInput.focus();
+            } else {
+                searchInput.style.display = "none";
+                searchInput.value = ""; // Bersihkan input saat ditutup
+                searchArticles(); // Reset pencarian
+            }
+        }
+
+        // Fungsi pencarian artikel
+        function searchArticles() {
+            const query = document.getElementById("search-input").value.toLowerCase();
+            const articles = document.querySelectorAll(".main-content article");
+
+            articles.forEach(article => {
+                const title = article.getAttribute("data-title").toLowerCase();
+                if (title.includes(query)) {
+                    article.style.display = "block";
+                } else {
+                    article.style.display = "none";
+                }
+            });
+        }
+
+        // Menampilkan tombol "Kembali ke Atas" saat di-scroll ke bawah
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById("back-to-top");
+            if (document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Fungsi untuk scroll kembali ke atas
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
 </body>
 </html>
