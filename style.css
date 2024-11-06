@@ -1,0 +1,96 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2em auto;
+}
+
+.post-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.post-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.8em;
+}
+
+.post-title {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.post-description {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsif */
+@media (min-width: 768px) {
+    .post-item {
+        width: calc(33.33% - 1em);
+    }
+}
+
